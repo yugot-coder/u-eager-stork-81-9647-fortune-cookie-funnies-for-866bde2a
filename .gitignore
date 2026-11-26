@@ -1,0 +1,4 @@
+# Kit is kept outside the repo; never commit it if copied in.
+*-kit/
+__pycache__/
+*.pyc

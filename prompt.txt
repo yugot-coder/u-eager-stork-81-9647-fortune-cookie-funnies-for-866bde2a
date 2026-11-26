@@ -1,0 +1,20 @@
+Write the funniest one-line fortune cookie message for a software engineer,
+1–120 characters, judged by an AI comedy editor pairwise against other entries.
+
+Judge criteria, most important first:
+1. A real fortune cookie message for a software engineer (not a general slogan).
+2. Genuinely funny on first read, with a real punchline — not a pun that only half works.
+3. Sounds like a fortune cookie: short, declarative, twist from the engineer's world of code, deploys, bugs and standups.
+4. Fresh: a line nobody has seen on a mug, a sticker or a conference slide.
+5. Tight: every word earns its place, funniest word at the end.
+
+Strong direction: a fortune that disguises career advice but is really about a
+bug, prod, or a Friday-afternoon deploy — specific, not generic wordplay like
+"you will meet a tall dark stack trace".
+
+Deliverable: main.py (stdlib only) that deterministically writes the single
+final line to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt),
+plus README.md (3 make.fun badges, the final text quoted, why it wins),
+CANDIDATES.md (10 candidates with reasons, why the winner was chosen),
+LICENSE (MIT + SPDX line), .makefun/owner.json, .gitignore.
+Verify: run main.py 3x (byte-identical sha256), clean-venv run, --check mode.
